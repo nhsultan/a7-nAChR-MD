@@ -1,0 +1,11 @@
+# Core Scientific Computing
+numpy
+scipy
+
+# Molecular Dynamics & Trajectory Analysis
+openmm
+mdtraj
+MDAnalysis
+
+# Machine Learning & Dimensionality Reduction
+scikit-learn

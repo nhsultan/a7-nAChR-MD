@@ -1,0 +1,62 @@
+A NVT unrestrained production simulation with applied electric field and CAL restraints
+ &cntrl
+    ! --- General Setup ---
+    imin=0,        ! No minimization
+    irest=1,       ! Restart from previous MD simulation
+    ntx=5,         ! Read coordinates and velocities from restart file
+
+    ! --- Temperature Control ---
+    ntt=3,         ! Langevin dynamics
+    gamma_ln=1.0,  ! Collision frequency / friction coefficient (ps^-1)
+    temp0=303.15,  ! Target temperature (K)
+
+    ! --- Nonbonded / Potential Energy Control ---
+    cut=12.0,      ! Nonbonded cutoff distance (Angstroms)
+    fswitch=10.0,  ! Force-based switching distance
+
+    ! --- MD Settings ---
+    nstlim=500000, ! Number of MD steps (500,000 steps = 1 ns)
+    dt=0.002,      ! Time step (2 fs)
+    ntb=1,         ! Periodic boundaries for constant volume
+
+    ! --- External Electric Field ---
+    efz=-0.014,    ! Applied electric field in the Z-direction
+
+    ! --- SHAKE (Bond Constraints) ---
+    ntc=2,         ! Constrain bonds containing hydrogen
+    ntf=2,         ! Do not calculate forces of bonds containing hydrogen
+
+    ! --- Output / Trajectory Writing ---
+    ntpr=1000,     ! Print energy info every 1000 steps
+    ntwx=5000,     ! Print coordinates to trajectory every 5000 steps
+    ntwr=10000,    ! Print restart file every 10000 steps
+    ntxo=2,        ! Write restart in NetCDF format
+    ioutfm=1,      ! Write trajectory in NetCDF format
+    iwrap=1,       ! Wrap coordinates into the primary box
+
+    ! --- Pressure Control ---
+    ntp=0,         ! No pressure scaling (NVT ensemble due to applied electric field)
+    pres0=1.0,     ! Target external pressure (bar)
+
+    ! --- Custom Restraints ---
+    nmropt=1,      ! Turn on custom restraints to read the CAL_fix.rst file
+
+    ! --- SETTLE Algorithm Parameters ---
+    watnam='WAT',  ! Water residues are named WAT
+    owtnm='O',     ! Water oxygens are named O
+    ntave=0,
+ /
+
+ &ewald
+    vdwmeth=0,
+ /
+
+ &wt
+    type='END'
+ /
+ 
+ ! Read the custom Calcium distance restraints
+ DISANG=CAL_fix.rest
+ LISTIN=POUT
+ LISTOUT=POUT
+ &end

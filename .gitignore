@@ -1,0 +1,79 @@
+# ========================================
+# Molecular Dynamics (AMBER & OpenMM)
+# ========================================
+# Trajectories and Coordinates
+*.nc
+*.dcd
+*.xtc
+*.trr
+*.crd
+*.mdcrd
+*.netcdf
+
+# Restart and Checkpoint files
+*.rst
+*.rst7
+
+# Standard Output, Logs, and Info
+*.out
+*.mdinfo
+*.frc
+*.log
+
+# ========================================
+# Project Specific
+# ========================================
+results/
+
+# ========================================
+# Python
+# ========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# ========================================
+# MATLAB
+# ========================================
+*.asv
+*.mat
+matlab_crash_dump*
+
+# ========================================
+# Mathematica
+# ========================================
+*.nb~
+
+# ========================================
+# OS Generated Files
+# ========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

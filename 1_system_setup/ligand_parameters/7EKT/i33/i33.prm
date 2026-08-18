@@ -1,0 +1,151 @@
+* Force Field Parameter File.
+* 
+
+ATOMS
+MASS    -1 _CXB   12.010000
+MASS    -1 _CCXB  12.010000
+MASS    -1 _CDXB  12.010000
+MASS    -1 _CAXB  12.010000
+MASS    -1 _C3XB  12.010000
+MASS    -1 _NSXB  14.010000
+MASS    -1 _N3XB  14.010000
+MASS    -1 _OXB   16.000000
+MASS    -1 _SSXB  32.060000
+MASS    -1 _CLXB  35.450000
+MASS    -1 _HAXB   1.008000
+MASS    -1 _H1XB   1.008000
+MASS    -1 _HCXB   1.008000
+MASS    -1 _HNXB   1.008000
+
+BONDS
+_CXB _CCXB  295.40   1.468
+_CXB _NSXB  356.20   1.379
+_CXB _OXB  652.60   1.218
+_CCXB _CDXB  416.10   1.373
+_CCXB _SSXB  232.00   1.756
+_CAXB _CDXB  308.20   1.456
+_CDXB _HAXB  400.10   1.084
+_CAXB _CAXB  378.60   1.398
+_CAXB _SSXB  216.10   1.781
+_CAXB _CLXB  182.00   1.750
+_CAXB _HAXB  395.70   1.086
+_C3XB _C3XB  232.50   1.538
+_C3XB _NSXB  263.80   1.462
+_C3XB _H1XB  375.90   1.097
+_C3XB _N3XB  261.20   1.465
+_C3XB _HCXB  375.90   1.097
+_HNXB _NSXB  527.30   1.013
+
+ANGLES
+_CXB _CCXB _CDXB   67.200     121.350
+_CXB _CCXB _SSXB   63.000     121.970
+_CXB _NSXB _C3XB   65.300     120.690
+_CXB _NSXB _HNXB   48.700     117.550
+_CCXB _CXB _NSXB   87.100     112.700
+_CCXB _CXB _OXB   86.700     123.930
+_CCXB _CDXB _CAXB   69.800     113.510
+_CCXB _CDXB _HAXB   49.000     121.760
+_CCXB _SSXB _CAXB   77.800      89.470
+_CDXB _CCXB _SSXB   66.900     111.550
+_CDXB _CAXB _CAXB   67.100     120.790
+_CAXB _CDXB _HAXB   46.300     124.040
+_CAXB _CAXB _CAXB   68.800     120.020
+_CAXB _CAXB _SSXB   63.500     120.060
+_CAXB _CAXB _HAXB   48.700     119.880
+_CAXB _CAXB _CLXB   72.100     119.390
+_C3XB _C3XB _N3XB   83.300     111.040
+_C3XB _C3XB _H1XB   46.900     109.560
+_C3XB _C3XB _C3XB   64.900     111.510
+_C3XB _C3XB _HCXB   46.800     109.800
+_C3XB _NSXB _HNXB   46.100     117.680
+_C3XB _C3XB _NSXB   83.200     111.610
+_C3XB _N3XB _C3XB   65.700     112.350
+_NSXB _CXB _OXB  113.800     123.050
+_NSXB _C3XB _H1XB   61.500     108.880
+_N3XB _C3XB _H1XB   61.200     109.880
+_H1XB _C3XB _H1XB   38.800     108.460
+_HCXB _C3XB _HCXB   39.000     107.580
+
+DIHEDRALS
+_NSXB _CXB  _CCXB _CDXB     2.875         2     180.0
+_OXB  _CXB  _CCXB _CDXB     2.875         2     180.0
+_NSXB _CXB  _CCXB _SSXB     2.875         2     180.0
+_OXB  _CXB  _CCXB _SSXB     2.875         2     180.0
+_CCXB _CXB  _NSXB _C3XB     2.500         2     180.0
+_OXB  _CXB  _NSXB _C3XB     2.500         2     180.0
+_CCXB _CXB  _NSXB _HNXB     2.500         2     180.0
+_OXB  _CXB  _NSXB _HNXB     2.500         2     180.0
+_OXB  _CXB  _NSXB _HNXB     2.000         1       0.0
+_CXB  _CCXB _CDXB _CAXB     4.000         2     180.0
+_SSXB _CCXB _CDXB _CAXB     4.000         2     180.0
+_CXB  _CCXB _CDXB _HAXB     4.000         2     180.0
+_SSXB _CCXB _CDXB _HAXB     4.000         2     180.0
+_CXB  _CCXB _SSXB _CAXB     1.100         2     180.0
+_CDXB _CCXB _SSXB _CAXB     1.100         2     180.0
+_CAXB _CAXB _CDXB _CCXB     0.505         2     180.0
+_CAXB _CAXB _CDXB _HAXB     0.700         2     180.0
+_CAXB _CAXB _CAXB _CDXB     3.625         2     180.0
+_CAXB _CAXB _CAXB _CAXB     3.625         2     180.0
+_CDXB _CAXB _CAXB _SSXB     3.625         2     180.0
+_CAXB _CAXB _CAXB _SSXB     3.625         2     180.0
+_CDXB _CAXB _CAXB _HAXB     3.625         2     180.0
+_CAXB _CAXB _CAXB _HAXB     3.625         2     180.0
+_CAXB _CAXB _CAXB _CLXB     3.625         2     180.0
+_CLXB _CAXB _CAXB _SSXB     3.625         2     180.0
+_CAXB _CAXB _SSXB _CCXB     0.400         2     180.0
+_CLXB _CAXB _CAXB _HAXB     3.625         2     180.0
+_HAXB _CAXB _CAXB _HAXB     3.625         2     180.0
+_C3XB _C3XB _C3XB _N3XB     0.210         3       0.0
+_N3XB _C3XB _C3XB _NSXB     0.156         3       0.0
+_H1XB _C3XB _C3XB _N3XB     0.156         3       0.0
+_C3XB _C3XB _C3XB _H1XB     0.156         3       0.0
+_H1XB _C3XB _C3XB _NSXB     0.156         3       0.0
+_H1XB _C3XB _C3XB _H1XB     0.156         3       0.0
+_C3XB _C3XB _C3XB _C3XB     0.130         3       0.0
+_C3XB _C3XB _C3XB _C3XB     0.290         2     180.0
+_C3XB _C3XB _C3XB _C3XB     0.110         1       0.0
+_C3XB _C3XB _C3XB _NSXB     0.100         3       0.0
+_C3XB _C3XB _C3XB _HCXB     0.080         3       0.0
+_HCXB _C3XB _C3XB _NSXB     0.156         3       0.0
+_H1XB _C3XB _C3XB _HCXB     0.156         3       0.0
+_C3XB _C3XB _NSXB _CXB      0.100         4     180.0
+_C3XB _C3XB _NSXB _CXB      0.170         3       0.0
+_C3XB _C3XB _NSXB _CXB      1.020         1     180.0
+_H1XB _C3XB _NSXB _CXB      0.000         2     180.0
+_C3XB _C3XB _NSXB _HNXB     0.000         2       0.0
+_H1XB _C3XB _NSXB _HNXB     0.000         2       0.0
+_C3XB _C3XB _N3XB _C3XB     0.580         3       0.0
+_C3XB _C3XB _N3XB _C3XB     0.280         2     180.0
+_H1XB _C3XB _N3XB _C3XB     0.225         3       0.0
+_HCXB _C3XB _C3XB _HCXB     0.120         3       0.0
+_HCXB _C3XB _C3XB _N3XB     0.100         3       0.0
+
+IMPROPER
+_CCXB _NSXB _CXB  _OXB     10.500         2     180.0
+_CXB  _CDXB _CCXB _SSXB     1.100         2     180.0
+_CAXB _CCXB _CDXB _HAXB     1.100         2     180.0
+_CAXB _CAXB _CAXB _CDXB     1.100         2     180.0
+_CAXB _CAXB _CAXB _SSXB     1.100         2     180.0
+_CAXB _CAXB _CAXB _CLXB     1.100         2     180.0
+_CAXB _CAXB _CAXB _HAXB     1.100         2     180.0
+_CXB  _C3XB _NSXB _HNXB     1.100         2     180.0
+
+
+NONBONDED nbxmod  5 atom cdiel shift vatom vdistance vswitch -
+cutnb 14.0 ctofnb 12.0 ctonnb 10.0 eps 1.0 e14fac 1.0 wmin 1.5
+!                Emin     Rmin/2              Emin/2     Rmin  (for 1-4's)
+!             (kcal/mol)    (A)
+_CXB       0.00   -0.0988    1.8606      0.00   -0.0494    1.8606
+_CCXB      0.00   -0.0988    1.8606      0.00   -0.0494    1.8606
+_CDXB      0.00   -0.0988    1.8606      0.00   -0.0494    1.8606
+_CAXB      0.00   -0.0988    1.8606      0.00   -0.0494    1.8606
+_C3XB      0.00   -0.1078    1.9069      0.00   -0.0539    1.9069
+_NSXB      0.00   -0.1174    1.8352      0.00   -0.0587    1.8352
+_N3XB      0.00   -0.0858    1.8886      0.00   -0.0429    1.8886
+_OXB       0.00   -0.1463    1.7107      0.00   -0.0732    1.7107
+_SSXB      0.00   -0.2824    1.9825      0.00   -0.1412    1.9825
+_CLXB      0.00   -0.2638    1.9452      0.00   -0.1319    1.9452
+_HAXB      0.00   -0.0161    1.4735      0.00   -0.0080    1.4735
+_H1XB      0.00   -0.0208    1.3593      0.00   -0.0104    1.3593
+_HCXB      0.00   -0.0208    1.4593      0.00   -0.0104    1.4593
+_HNXB      0.00   -0.0100    0.6210      0.00   -0.0050    0.6210

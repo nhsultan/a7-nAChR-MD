@@ -1,0 +1,81 @@
+* Force Field Parameter File.
+* 
+
+ATOMS
+MASS    -1 _C3XA  12.010000
+MASS    -1 _C2XA  12.010000
+MASS    -1 _OHXA  16.000000
+MASS    -1 _HCXA   1.008000
+MASS    -1 _H1XA   1.008000
+MASS    -1 _HAXA   1.008000
+MASS    -1 _HOXA   1.008000
+
+BONDS
+_C3XA _C3XA  232.50   1.538
+_C3XA _HCXA  375.90   1.097
+_C3XA _OHXA  293.40   1.423
+_C3XA _H1XA  375.90   1.097
+_C2XA _C3XA  255.60   1.510
+_C2XA _C2XA  481.80   1.334
+_C2XA _HAXA  392.20   1.088
+_HOXA _OHXA  563.50   0.973
+
+ANGLES
+_C3XA _C3XA _C3XA   64.900     111.510
+_C3XA _C3XA _HCXA   46.800     109.800
+_C3XA _C3XA _C2XA   65.500     111.560
+_C3XA _C3XA _OHXA   84.600     110.190
+_C3XA _C3XA _H1XA   46.900     109.560
+_C3XA _OHXA _HOXA   49.000     107.260
+_C3XA _C2XA _C2XA   66.100     123.630
+_C3XA _C2XA _C3XA   64.900     115.650
+_C2XA _C3XA _HCXA   47.500     110.360
+_C2XA _C2XA _HAXA   50.400     120.430
+_C3XA _C2XA _HAXA   46.400     115.680
+_OHXA _C3XA _H1XA   62.500     110.260
+_HCXA _C3XA _HCXA   39.000     107.580
+
+DIHEDRALS
+_C3XA _C3XA _C3XA _C3XA     0.130         3       0.0
+_C3XA _C3XA _C3XA _C3XA     0.290         2     180.0
+_C3XA _C3XA _C3XA _C3XA     0.110         1       0.0
+_C3XA _C3XA _C3XA _HCXA     0.080         3       0.0
+_HCXA _C3XA _C3XA _HCXA     0.120         3       0.0
+_C2XA _C3XA _C3XA _C3XA     0.156         3       0.0
+_C2XA _C3XA _C3XA _HCXA     0.156         3       0.0
+_C3XA _C3XA _C3XA _OHXA     0.210         3       0.0
+_HCXA _C3XA _C3XA _OHXA     0.180         3       0.0
+_HCXA _C3XA _C3XA _OHXA     0.510         1       0.0
+_C3XA _C3XA _C3XA _H1XA     0.156         3       0.0
+_H1XA _C3XA _C3XA _HCXA     0.156         3       0.0
+_C2XA _C3XA _C3XA _OHXA     0.156         3       0.0
+_C2XA _C3XA _C3XA _H1XA     0.156         3       0.0
+_C3XA _C3XA _OHXA _HOXA     0.000         3       0.0
+_H1XA _C3XA _OHXA _HOXA     0.113         3       0.0
+_C2XA _C2XA _C3XA _C3XA     0.000         2       0.0
+_C2XA _C2XA _C3XA _HCXA     0.360         3     180.0
+_C2XA _C2XA _C3XA _HCXA     1.470         1       0.0
+_C3XA _C2XA _C3XA _C3XA     0.000         2       0.0
+_C3XA _C2XA _C3XA _HCXA     0.310         2       0.0
+_C3XA _C2XA _C2XA _C3XA     5.290         2     180.0
+_C3XA _C2XA _C2XA _C3XA     0.400         1     180.0
+_C3XA _C2XA _C2XA _HAXA     6.650         2     180.0
+_HAXA _C2XA _C3XA _C3XA     0.000         2       0.0
+_HAXA _C2XA _C3XA _HCXA     0.000         2       0.0
+
+IMPROPER
+_C2XA _C3XA _C2XA _C3XA     1.100         2     180.0
+_C2XA _C3XA _C2XA _HAXA     1.100         2     180.0
+
+
+NONBONDED nbxmod  5 atom cdiel shift vatom vdistance vswitch -
+cutnb 14.0 ctofnb 12.0 ctonnb 10.0 eps 1.0 e14fac 1.0 wmin 1.5
+!                Emin     Rmin/2              Emin/2     Rmin  (for 1-4's)
+!             (kcal/mol)    (A)
+_C3XA      0.00   -0.1078    1.9069      0.00   -0.0539    1.9069
+_C2XA      0.00   -0.0988    1.8606      0.00   -0.0494    1.8606
+_OHXA      0.00   -0.0930    1.8200      0.00   -0.0465    1.8200
+_HCXA      0.00   -0.0208    1.4593      0.00   -0.0104    1.4593
+_H1XA      0.00   -0.0208    1.3593      0.00   -0.0104    1.3593
+_HAXA      0.00   -0.0161    1.4735      0.00   -0.0080    1.4735
+_HOXA      0.00   -0.0047    0.3019      0.00   -0.0024    0.3019
